@@ -10,8 +10,7 @@ while (c <= '9')
 {
 if (c != '2' && c != '4')
 {
-_putchar(c);									
-}
+_putchar(c + '0');								}
 c++;
 }
 _putchar('\n');
