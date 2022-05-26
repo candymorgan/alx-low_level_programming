@@ -61,7 +61,8 @@ size_t free_listint_safe(listint_t **h)
 		}
 
 		curr = *h;
-		*h = (*h)-	free(curr);
+		*h = (*h)->next;
+		free(curr);
 		nnodes++;
 	}
 
